@@ -16,7 +16,7 @@ nit=1000
 result = np.zeros(nit)
 
 # fake x-data
-x = np.arange(0.1,100.,0.1)
+x = np.arange(0.1,10.,0.1)
 
 plt.ion()
 plt.clf()
@@ -43,3 +43,4 @@ for i in range(0, nit):
 	
 # plot a histogram of fitted centers of the gaussian
 plt.hist(result,bins=20)
+print('new feature!')
