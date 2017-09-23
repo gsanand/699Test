@@ -16,7 +16,7 @@ nit=1000
 result = np.zeros(nit)
 
 # fake x-data
-x = np.arange(0.1,10.,0.1)
+x = np.arange(0.1,100.,0.1)
 
 plt.ion()
 plt.clf()
@@ -38,7 +38,7 @@ for i in range(0, nit):
 	plt.plot(x,y,'or')
 	plt.plot(x,z)
 	plt.draw()
-	raw_input(':')
+	input(':')
 	plt.clf()
 	
 # plot a histogram of fitted centers of the gaussian
